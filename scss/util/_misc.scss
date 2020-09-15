@@ -1,0 +1,116 @@
+/* ###### 9.5 Misc   ###### */
+
+
+// This generate a class name of .op-1 having a style of opacity: 0.1.
+// Values goes up to 0.9;
+$num: 0;
+@while $num < 10 {
+  .op-#{$num} { opacity: 0 + ($num * 0.1); }
+  .op-#{$num}-f { opacity: 0 + ($num * 0.1) !important; }
+  $num: $num + 1;
+}
+
+@mixin do-opacity($viewport) {
+  $num: 0;
+  @while $num < 10 {
+    .op-#{$viewport}-#{$num} { opacity: 0 + ($num * 0.1); }
+    .op-#{$viewport}-#{$num}-f { opacity: 0 + ($num * 0.1) !important; }
+    $num: $num + 1;
+  }
+}
+
+.opacity-1 { opacity: 1; }
+.shadow-base { box-shadow: 0 0 2px 2px rgba($gray-900, .03); }
+.shadow-1 { box-shadow: 0 0 7px 7px rgba($gray-900, .1); }
+.shadow-2 { box-shadow: 0 0 30px rgba($gray-900, .08); }
+.shadow-none { box-shadow: none; }
+
+.overflow-y-auto { overflow-y: auto; }
+.overflow-hidden { overflow: hidden; }
+
+// Flex
+.flex-1 { flex: 1; }
+.flex-0 { flex: 0; }
+
+.img-fit-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (min-width: 480px) {
+  @include do-opacity("xs");
+}
+
+@include media-breakpoint-up(sm) {
+  @include do-opacity("sm");
+}
+
+@include media-breakpoint-up(md) {
+  @include do-opacity("md");
+}
+
+@include media-breakpoint-up(lg) {
+  @include do-opacity("lg");
+}
+
+@include media-breakpoint-up(xl) {
+  @include do-opacity("xl");
+}
+
+.img-lg {
+  width: 92px;
+  height: 92px;
+}
+.img-sm {
+  width: 43px;
+  height: 43px;
+}
+.img-xs {
+  width: 37px;
+  height: 37px;
+}
+.img-ss {
+  width: 35px;
+  height: 35px;
+}
+.img-es {
+  width: 25px;
+  height: 25px;
+}
+.image-grouped {
+  display: flex;
+
+  .text-avatar,
+  img {
+    @extend .img-ss;
+    border-radius: 100%;
+    margin-left: -10px;
+    z-index: 0;
+    border: 4px solid $card-bg;
+    transform: scale(1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-property: "box-shadow", "z-index", "transform", "border-width";
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      z-index: 1;
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+      border-width: 0;
+
+    }
+  }
+
+  .text-avatar {
+    // @extend .bg-inverse-primary;
+    color: theme-color(primary);
+    font-size: 11px;
+    font-weight: 600;
+  }
+}

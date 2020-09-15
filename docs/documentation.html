@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Azia Documentation v1.0</title>
+    <link href="documentation.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="left-panel">
+      <h4 class="logo">azia</h4>
+      <h6 class="title-label">Getting Started</h6>
+      <ul class="left-menu">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#whatsincluded">What's Included</a></li>
+        <li><a href="#nodejs">NodeJS</a></li>
+        <li><a href="#gulp">Gulp</a></li>
+        <li><a href="#sass">SASS</a></li>
+        <li><a href="#running">Running Azia</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Stylesheet</h6>
+      <ul class="left-menu">
+        <li><a href="#bootstrap">Bootstrap</a></li>
+        <li><a href="#plugins">Lib</a></li>
+        <li><a href="#utilities">Utilities</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Basic HTML Structure</h6>
+      <ul class="left-menu">
+        <li><a href="#header">Header</a></li>
+        <li><a href="#navbar">Navbar</a></li>
+        <li><a href="#sidebar">Sidebar</a></li>
+        <li><a href="#iconbar">Iconbar</a></li>
+        <li><a href="#footer">Footer</a></li>
+        <li><a href="#components">Elements</a></li>
+      </ul>
+
+      <h6 class="title-label mg-t-40">Other Information</h6>
+      <ul class="left-menu">
+        <li><a href="#knownissue">Known Issue</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#support">Customer Support</a></li>
+      </ul>
+
+      <br><br>
+    </div><!-- left-panel -->
+
+
+    <div class="main-wrapper">
+      <div class="main-panel">
+
+        <h1 id="introduction" class="section-title">Azia Documentation v1.0</h1>
+        <p>Thank you so much for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us at <a href="mailto:support@bootstrapdash.com">support@bootstrapdash.com</a> or submit a comment to this template. Thanks so much!</p>
+
+        <h2 class="section-subtitle">Getting Started</h2>
+
+        <p>Azia, a modern and clean Bootstrap 4 admin &amp; dashboard template using modern and minimal design. It is fully responsive built using SASS preprocessor, HTML5, CSS3 and jQuery plugins. It uses most of the helper/utilities classes which are reusable class that makes the page faster and increases the speed of page time load. It can be used for most type of dashboard and app templates like analytics, admin or messenger app for your desktpo or mobile applications. Amazing flexibility and reusability. See the demo.</p>
+
+        <h2 class="section-subtitle">Introduction</h2>
+        <p>This part of the doc will help you to quick start your project and will give you a basic idea about how azia work. For you to get start open the "themes" folder in templates/ of your download package.</p>
+
+        <h2 id="whatsincluded" class="section-subtitle">What's Included</h2>
+        <p>Once you have download the package you will see the following folder structure inside zip package file.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-20p">Folder/File</th>
+              <th class="wd-80p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>css/</td>
+              <td>Includes every styles from the scss folder built into a single css file, also added with minified version.</td>
+            </tr>
+            <tr>
+              <td>img/</td>
+              <td>all image files used in the demo of this template</td>
+            </tr>
+            <tr>
+              <td>js/</td>
+              <td>all js files needed for this template.</td>
+            </tr>
+            <tr>
+              <td>lib/</td>
+              <td>all third party plugin files that needed for this template.</td>
+            </tr>
+            <tr>
+              <td>scss/</td>
+              <td>The scss files used in this template when compiled will goes to <strong>app/css</strong> folder</td>
+            </tr>
+            <tr>
+              <td>starters/</td>
+              <td>dashboard starter template use in 10 pre-built dashboard demo</td>
+            </tr>
+            <tr>
+              <td>template/</td>
+              <td>all html files for this template</td>
+            </tr>
+            <tr>
+              <td>.gitignore</td>
+              <td>A pre-made list of files and folders to be ignored during commit when using git</td>
+            </tr>
+            <tr>
+              <td>change-log.txt</td>
+              <td>Contains a list of changes and changes made in every version of the template.</td>
+            </tr>
+            <tr>
+              <td>gulpfile.js</td>
+              <td>A code used to configure or define tasks and load gulp plugins.</td>
+            </tr>
+            <tr>
+              <td>index.html</td>
+              <td>The base index file when running local server.</td>
+            </tr>
+            <tr>
+              <td>package.json</td>
+              <td>Contains a list of dependencies and some script that Gulp will use to install dependencies and plugins of gulp.</td>
+            </tr>
+            <tr>
+              <td>README.md</td>
+              <td>An file that describes about this template.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <p>Note: If you are still unsure of what's the use of this files, you may want to proceed to the next topic:</p>
+        <ul>
+          <li><a href="#nodejs">NodeJS</a></li>
+          <li><a href="#gulp">Gulp</a></li>
+          <li><a href="#sass">SASS</a></li>
+        </ul>
+
+        <hr id="nodejs">
+
+        <h1 class="section-title">NodeJS</h1>
+        <p>Before installing gulp and sass first you must have NodeJs installed, NodeJS will have npm (node packaged modules). </p>
+
+        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+
+        <small class="tx-muted">Online Reference: <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a></small>
+
+        <h2 class="section-subtitle">Installing in Mac</h2>
+        <p>Simply download the <a href="https://nodejs.org/en/#download">Macintosh Installer</a> direct from the nodejs.org web site.</p>
+        <p>If you want to download the package with bash:</p>
+        <div class="pre-wrapper"><pre>curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"</pre></div>
+
+        <p>Using Homebrew:</p>
+        <div class="pre-wrapper">
+          <pre>brew install node</pre>
+        </div>
+
+        <h2 class="section-subtitle">Installing in Windows</h2>
+        <p>Simply download the <a href="https://nodejs.org/en/#download">Windows Installer</a> direct from the nodejs.org web site.</p>
+        <br>
+
+        <hr id="gulp">
+
+        <h1 class="section-title">Gulp JS</h1>
+        <p>Before installing gulp first you must have NodeJs installed, NodeJS will have npm (node packaged modules). </p>
+
+        <p>Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.</p>
+
+        <small class="tx-muted">Online Reference: <a href="https://gruntjs.com/" target="_blank">https://gruntjs.com/</a></small>
+
+        <h2 class="section-subtitle">Installing the CLI</h2>
+        <p>If you have previously installed a version of gulp globally, please run npm rm --global gulp to make sure your old version doesn't collide with gulp-cli.</p>
+        <div class="pre-wrapper">
+          <pre>$ npm install -g gulp-cli</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>Verify that gulp is successfully installed, and version of installed gulp will appear.</p>
+        <div class="pre-wrapper">
+          <pre>$ gulp --version</pre>
+        </div><!-- pre-wrapper -->
+        <br>
+
+        <hr id="sass">
+
+        <h1 class="section-title">SASS</h1>
+        <p>Before running grunt first you must check if you have sass installed in your machine. You can verify that sass is already installed by running the command.</p>
+        <div class="pre-wrapper">
+          <pre>$ sass --version</pre>
+        </div><!-- pre-wrapper -->
+        <p>If version appear, it means sass already installed in your machine and proceed to the next topic, otherwise follow the instructions below on installing sass.</p>
+
+        <h2 class="section-subtitle">Installing SASS</h2>
+
+        <h4>Windows</h4>
+        <p>Before you start using Sass you will need to install Ruby. The fastest way to get Ruby on your Windows computer is to use <a href="http://rubyinstaller.org/">Ruby Installer</a>. It's a single-click installer that will get everything set up for you super fast. </p>
+
+        <h4>Mac</h4>
+        <p>If you prefer the command line over an application then getting Sass set up is a fairly quick process. Sass has a Ruby dependency but if you're using a Mac, congratulations, Ruby comes pre-installed. </p>
+
+        <h4>Install SASS</h4>
+        <p>Ruby uses Gems to manage its various packages of code like Sass. In your open terminal or cmd window: </p>
+        <div class="pre-wrapper">
+          <pre>$ gem install sass</pre>
+        </div><!-- pre-wrapper -->
+        <p>You should now have Sass installed, but it never hurts to double-check.</p>
+        <div class="pre-wrapper">
+          <pre>$ sass --version</pre>
+        </div><!-- pre-wrapper -->
+
+        <br>
+
+        <small class="tx-muted">Online Reference: <a href="http://sass-lang.com/install" target="_blank">http://sass-lang.com/install</a></small>
+
+        <hr id="running">
+
+        <h1 class="section-title">Running Azia</h1>
+        <p>You're moments away to see the azia dashboard template up and running in your local machine. First, go to the root folder where the package.json located. In your download package it should be in the root folder. Please run the following command below.</p>
+
+        <p>Note: Running azia to you local machine is not a requirements for you to see the template. You can directly browse to the template folder and choose any html file you want to open by opening it directly to the browser.</p>
+
+        <div class="pre-wrapper">
+          <pre>$ npm install</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>This will download all dependencies defined in <strong>package.json</strong> file. Once it finished running the command, it will generate a folder name <strong>node_modules/</strong> where you see downloaded files.Next, run another command below</p>
+
+        <div class="pre-wrapper">
+          <pre>$ gulp npm-lib</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>This will extract all dependencies defined in <strong>package.json</strong> file. Once it finished running the command, it will generate a folder name <strong>lib/</strong> where you see extracted files.</p>
+
+        <h4>Running in Browser</h4>
+        <p>Now you're good to go in running the template and preview it in browser by running the command below.</p>
+
+        <div class="pre-wrapper">
+          <pre>$ gulp serve</pre>
+        </div><!-- pre-wrapper -->
+
+        <p>The template is now up and running in your browser. Feel free to visit each page and familiarize the flow of it.</p>
+
+        <hr>
+
+        <h1 class="section-title">Stylesheet</h1>
+        <p>We use SASS in creating styles in this template logically grouping into sections. Below are the structure of sass files and folders</p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-30p">Folder/File </th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bootstrap/</td>
+              <td>Contains override styles from Bootstrap core framework for custom design and enhancement</td>
+            </tr>
+            <tr>
+              <td>custom/</td>
+              <td>some additional components styles.</td>
+            </tr>
+            <tr>
+              <td>layout/</td>
+              <td>a panel style to a specific part of the template.</td>
+            </tr>
+            <tr>
+              <td>lib/</td>
+              <td>Contains a custom styles from plugins that override the current design for improvements</td>
+            </tr>
+            <tr>
+              <td>template/</td>
+              <td>Contain a specific styles only to that pages.</td>
+            </tr>
+            <tr>
+              <td>util/</td>
+              <td>Contain a helper and very reusable classes.</td>
+            </tr>
+            <tr>
+              <td>azia.scss</td>
+              <td>Imports all scss file into one file for compiling into css</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <hr id="bootstrap">
+
+        <h1 class="section-title">Bootstrap</h1>
+        <p>All of the files organized into a name of element are override styles of Bootstrap core framework styles. It is overriden for performance and design quality improvement purposes.</p>
+        <p>To learn more about Bootstrap, visit their site at <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
+        <br>
+
+        <hr id="plugins">
+
+        <h1 class="section-title">Plugins</h1>
+        <p>All  files organized into a name of plugin are override styles from some of the plugins used in this template and can be found in <strong>lib/</strong> folder. It is also overriden for performance and design quality improvement purposes.</p>
+        <br>
+
+        <hr id="utilities">
+
+        <h1 class="section-title">Utilities</h1>
+        <p>Utilities classes are very reusable classes with a single purpose to reduce the frequency of highly repetitive declarations.</p>
+
+        <p><strong>Note:</strong> Below are some of the classes that we think are more reusable. If you did not find any classes on the list be sure to check the scss files under scss/utilities/ folder if there are any existing classes you need before you can create a new style.</p>
+
+        <h4>Background Color</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.bg-transparent</span>
+              </td>
+              <td>Sets a transparent background to an element with already have a background color.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-gray-[value]</span></td>
+              <td>900 | 800 | 700 | 600 | 500 | 400 | 300 | 200 | 100</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-[value]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | purple-dark | teal | pink | orange </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-white-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bg-black-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Borders</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value / Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.bd</span></td>
+              <td>Add border in all sides of an element with default color gray and default width of 1px.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-t</span></td>
+              <td>Add border to top side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-r</span></td>
+              <td>Add border to right side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-b</span></td>
+              <td>Add border to bottom side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-l</span></td>
+              <td>Add border to left side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-x</span></td>
+              <td>Add border to left and right side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-y</span></td>
+              <td>Add border to top and bottom side of element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd</span></td>
+              <td>Set 1px (default) border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-2</span></td>
+              <td>Set 2px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-3</span></td>
+              <td>Set 3px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-4</span></td>
+              <td>Set 4px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-5</span></td>
+              <td>Set 5px border to element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-t-0</span></td>
+              <td>Remove top border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-r-0</span></td>
+              <td>Remove right border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-b-0</span></td>
+              <td>Remove bottom border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-l-0</span></td>
+              <td>Remove left border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-x-0</span></td>
+              <td>Remove left and right border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-y-0</span></td>
+              <td>Remove top and bottom border of an element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-[t||r|bl|x|y]-0-force</span></td>
+              <td>Force remove border of any side of an element. </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-[value]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | pink | teal | orange </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.bd-gray-[value]</span></td>
+              <td>100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded</span></td>
+              <td>Set a border radius of 3px (default) to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded-[value]</span></td>
+              <td>5 | 10 | 20 | 30 | 40 | 50 | circle</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.rounded-[value]</span></td>
+              <td>top | right | bottom | left</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Height</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>15 | 20 | 25 | 30 | ... | 100 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]</span></td>
+              <td>150 | 200 | 250 | 300 | ... | 850 &nbsp; (step of 50)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[value]p</span></td>
+              <td>10 | 20 | 30 | 40 | ... | 100 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[size]-[value]</span></td>
+              <td rowspan="2" class="bd-b-0-force">
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the height value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-[size]-[value]p</span></td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-100v</span></td>
+              <td>Set a height to an element based on viewport height.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.ht-auto</span></td>
+              <td>Set an auto height to an element.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Width</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>15 | 20 | 25 | 30 | ... | 100 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]</span></td>
+              <td>150 | 200 | 250 | 300 | ... | 1000 &nbsp; (step of 50)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[value]p</span></td>
+              <td>10 | 20 | 30 | 40 | ... | 100 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[size]-[value]</span></td>
+              <td rowspan="2" class="bd-b-0-force">
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the width value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-[size]-[value]p</span></td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-100v</span></td>
+              <td>Set a width to an element based on viewport width.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.wd-auto</span></td>
+              <td>Set an auto width to an element.</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Margins</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-t-[value]</span><br>
+                <span class="tx-red">.mg-r-[value]</span><br>
+                <span class="tx-red">.mg-b-[value]</span><br>
+                <span class="tx-red">.mg-l-[value]</span>
+              </td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-t-[value]</span><br>
+                <span class="tx-red">.mg-r-[value]</span><br>
+                <span class="tx-red">.mg-b-[value]</span><br>
+                <span class="tx-red">.mg-l-[value]</span>
+              </td>
+              <td>15 | 20 | 25 | 30 | ... | 120 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.mg-[size]-t-[value]</span><br>
+                <span class="tx-red">.mg-[size]-r-[value]</span><br>
+                <span class="tx-red">.mg-[size]-b-[value]</span><br>
+                <span class="tx-red">.mg-[size]-l-[value]</span>
+              </td>
+              <td>
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the margin value (refer to code above)</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-t-auto</span></td>
+              <td>Set a top margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-r-auto</span></td>
+              <td>Set a right margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-b-auto</span></td>
+              <td>Set a bottom margin to auto</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.mg-l-auto</span></td>
+              <td>Set a left margin to auto</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Padding</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>15 | 20 | 25 | 30 | ... | 120 &nbsp; (step of 5)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-t-[value]</span><br>
+                <span class="tx-red">.pd-r-[value]</span><br>
+                <span class="tx-red">.pd-b-[value]</span><br>
+                <span class="tx-red">.pd-l-[value]</span>
+              </td>
+              <td>110 | 120 | 130 | 140 | ... | 200 &nbsp; (step of 10)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="tx-red">.pd-[size]-t-[value]</span><br>
+                <span class="tx-red">.pd-[size]-r-[value]</span><br>
+                <span class="tx-red">.pd-[size]-b-[value]</span><br>
+                <span class="tx-red">.pd-[size]-l-[value]</span>
+              </td>
+              <td>
+                <p class="mg-b-5">size: xs | sm | md | lg | xl</p>
+                <p class="mg-b-0">value: the padding value (refer to code above)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Position</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.pos-relative</span></td>
+              <td>Set a relative position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-absolute</span></td>
+              <td>Set an absolute position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-fixed</span></td>
+              <td>Set a fixed position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.pos-static</span></td>
+              <td>Set a static position to an element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.t-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.r-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.b-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.l-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.x-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.y-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.a-[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.t--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.r--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.b--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.l--[value]</span></td>
+              <td>0 | 5 | 10 | 15 | ... | 100 (step of 5)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.z-index-[value]</span></td>
+              <td>10 | 50 | 100 | 150 | 200</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>Typography</h4>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class</th>
+              <th class="wd-70p">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.tx-[size]</span></td>
+              <td>8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[size]</span></td>
+              <td>18 | 20 | 22 | 24 | ... | 140 (step of 2) </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[size]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl<br>
+                size: 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[size]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl<br>
+                size: 18 | 20 | 22 | 24 | ... | 140 (step of 2)
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[weight]</span></td>
+              <td>bold | semibold | medium | normal | light | thin | xthin</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[viewport]-[weight]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl <br>
+                weight: bold | semibold | medium | normal | light | thin | xthin
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[family]</span></td>
+              <td>poppins | hind | firasans (default) | roboto | source</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-[color]</span></td>
+              <td>primary | success | warning | danger | info | indigo | purple | orange | teal | pink | black | white | inverse</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-gray-[num]</span></td>
+              <td>100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-white-[transparency]</span></td>
+              <td>2 | 3 | 4 | 5 | 6 | 7 | 8</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-spacing-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.tx-spacing--[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 (negative spacing result)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.lh-[value]</span></td>
+              <td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.lh-[viewport]-[value]</span></td>
+              <td>
+                viewport: xs | sm | md | lg | xl <br>
+                value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p>If you have any questions that are beyond the scope of this class reference, please feel free to email us at <a href="mailto:support@bootstrapdash.com">support@bootstrapdash.com</a>. Thanks so much!</p>
+
+        <hr>
+
+        <h1 class="section-title">Basic HTML Structure</h1>
+
+        <hr id="header">
+
+        <h2 class="section-subtitle">Header Panel</h2>
+        <pre class="pre-wrapper">&lt;div class=&quot;az-header&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;az-header-left&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;az-header-center&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;az-header-right&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;&lt;!-- container --&gt;
+&lt;/div&gt;&lt;!-- az-header --&gt;</pre>
+
+        <br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.az-header</span></td>
+              <td>The parent element class of header</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.container / .container-fluid</span></td>
+              <td>Set .container class for fixed width of header, otherwise .container-fluid for fluid width.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-header-left</span></td>
+              <td>A wrapper element displayed in the left portion of header (ie. logo)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-header-center</span></td>
+              <td>A wrapper element class in the center portion of header (ie. search box)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-header-right</span></td>
+              <td>A wrapper element class in the right portion of header (ie. notification, logged user, etc.)</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <hr id="navbar">
+
+        <h2 class="section-subtitle">Navbar</h2>
+        <p>Below is the html structure of the navbar of this dashboard or admin template that includes menu and icon menu. This navbar will turn into sidebar when in mobile.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;az-navbar&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;&lt;a href=&quot;../template/index.html&quot; class=&quot;az-logo&quot;&gt;az&lt;span&gt;i&lt;/span&gt;a&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;az-navbar-search&quot;&gt;
+      &lt;input type=&quot;search&quot; class=&quot;form-control&quot; placeholder=&quot;Search for anything...&quot;&gt;
+      &lt;button class=&quot;btn&quot;&gt;&lt;i class=&quot;fas fa-search &quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;&lt;!-- az-navbar-search --&gt;
+    &lt;ul class=&quot;nav&quot;&gt;
+      &lt;li class=&quot;nav-label&quot;&gt;Main Menu&lt;/li&gt;
+      &lt;li class=&quot;nav-item active show&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;nav-link with-sub&quot;&gt;&lt;i class=&quot;typcn typcn-clipboard&quot;&gt;&lt;/i&gt;Dashboard&lt;/a&gt;
+        &lt;nav class=&quot;nav-sub&quot;&gt;
+          &lt;a href=&quot;index.html&quot; class=&quot;nav-sub-link active&quot;&gt;Web Analytics&lt;/a&gt;
+          ...
+        &lt;/nav&gt;
+      &lt;/li&gt;&lt;!-- nav-item --&gt;
+    &lt;/ul&gt;&lt;!-- nav --&gt;
+  &lt;/div&gt;&lt;!-- container --&gt;
+&lt;/div&gt;&lt;!-- az-navbar --&gt;</pre>
+<br>
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.az-navbar</span></td>
+              <td>The parent wrapper element class for the navbar of this template.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.container/.container-fluid</span></td>
+              <td>This class only applies to desktop devices only. Set .container for fixed width of navbar otherwise set .container-fluid for fluid width.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-navbar-search</span></td>
+              <td>This only displays in mobile devices only other than that this element is hidden.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.nav-label</span></td>
+              <td>This will only displayed in mobile devices only when navbar turns into sidebar for mobile. Displays hidden when in large screen resolution.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.nav-item</span></td>
+              <td>The parent element of navbar menu link. Added .active class when menu is active and .show when menu shows a sub menu.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.with-sub</span></td>
+              <td>Additional class to .nav-link that displays an indicator that the menu have sub menu in it.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.nav-sub</span></td>
+              <td>The sub menu wrapper of navbar</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.nav-sub-link</span></td>
+              <td>The link item of navbar's sub-menu</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="sidebar">
+
+        <h2 class="section-subtitle">Sidebar</h2>
+        <p>This is another layout variant of the template where the page have sidebar in it. To better understand the full html structure of page using sidebar layout, please see <strong><i>starters/dashboard-two.html</i></strong> file.</p>
+
+        <pre class="pre-wrapper">&lt;body class=&quot;az-body-sidebar&quot;&gt;
+  &lt;div class=&quot;az-sidebar&quot;&gt;
+    &lt;div class=&quot;az-sidebar-header&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;az-sidebar-loggedin&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;az-sidebar-body&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;&lt;!-- az-sidebar --&gt;
+  &lt;div class=&quot;az-content&quot;&gt;...&lt;/div&gt;
+&lt;/body&gt;</pre><br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.az-body-sidebar</span></td>
+              <td>Required class to be added in &lt;body&gt; tag when using sidebar layout of this template.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-sidebar</span></td>
+              <td>The sidebar parent class element.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-sidebar-header</span></td>
+              <td>The header element of sidebar where you can add logo, (forward and back button for mobile) or any element that you'd like to add.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-sidebar-loggedin</span></td>
+              <td>This element contains the thumbnail of user logged in and profile menu (ie. edit profile, signout, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-sidebar-body</span></td>
+              <td>This element contains the sidebar menu using the same structure of the navbar.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-content</span></td>
+              <td>This is the wrapper where you can add your main page content of the page.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="iconbar">
+
+        <h2 class="section-subtitle">Iconbar</h2>
+        <p>This is another layout variant of the template where the page have iconbar in left portion of the page along with it's sub menu. To better understand the full html structure of page using iconbar layout, please see <strong><i>starters/dashboard-three.html</i></strong> file.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;az-iconbar&quot;&gt;
+  &lt;a href=&quot;../template/index.html&quot; class=&quot;az-iconbar-logo&quot;&gt;&lt;i class=&quot;typcn typcn-chart-bar-outline&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;nav class=&quot;nav&quot;&gt;
+    &lt;a href=&quot;#asideDashboard&quot; class=&quot;nav-link active&quot;&gt;&lt;i class=&quot;typcn typcn-device-laptop&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#asideAppsPages&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;typcn typcn-calendar-outline&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    ...
+  &lt;/nav&gt;
+  &lt;div class=&quot;az-iconbar-bottom&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;az-iconbar-help&quot;&gt;&lt;i class=&quot;far fa-question-circle&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;&quot; class=&quot;az-img-user online&quot;&gt;&lt;img src=&quot;../img/faces/face1.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;&lt;!-- az-iconbar-bottom --&gt;
+&lt;/div&gt;&lt;!-- az-iconbar --&gt;
+&lt;div class=&quot;az-iconbar-aside&quot;&gt;
+  &lt;div class=&quot;az-iconbar-header&quot;&gt;
+    &lt;a href=&quot;../template/index.html&quot; class=&quot;az-logo&quot;&gt;az&lt;span&gt;i&lt;/span&gt;a&lt;/a&gt;
+    &lt;a href=&quot;&quot; class=&quot;az-iconbar-toggle-menu&quot;&gt;
+      &lt;i class=&quot;icon ion-md-arrow-back&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;icon ion-md-close&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;&lt;!-- az-iconbar-header --&gt;
+  &lt;div class=&quot;az-iconbar-body&quot;&gt;
+    &lt;div id=&quot;asideDashboard&quot; class=&quot;az-iconbar-pane&quot;&gt;
+      &lt;h6 class=&quot;az-iconbar-title&quot;&gt;Dashboard&lt;/h6&gt;
+      &lt;small class=&quot;az-iconbar-text&quot;&gt;Choose between layouts to experience different look and feel for your projects.&lt;/small&gt;
+
+      &lt;nav class=&quot;nav&quot;&gt;
+        &lt;a href=&quot;index.html&quot; class=&quot;nav-link&quot;&gt;Web Analytics&lt;/a&gt;
+        ...
+      &lt;/nav&gt;
+    &lt;/div&gt;
+    ...
+  &lt;/div&gt;&lt;!-- az-iconbar-body --&gt;
+&lt;/div&gt;&lt;!-- az-iconbar-aside --&gt;</pre><br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.az-iconbar</span></td>
+              <td>The parent element wrapper class of iconbar</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-iconbar-bottom</span></td>
+              <td>The bottom portion of the iconbar (ie. profile thumbnail, signout, etc.)</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-iconbar-aside</span></td>
+              <td>This serves like a dropdown of the iconbar menu where you can find the sub menus of iconbar and some description of it.</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-iconbar-header</span></td>
+              <td>The header portion of the iconbar aside element</td>
+            </tr>
+            <tr>
+              <td><span class="tx-red">.az-iconbar-body</span></td>
+              <td>This is where you can find the iconbar item description and it's sub menu</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="footer">
+
+        <h2 class="section-subtitle">Footer</h2>
+        <p>This is the only layout used for footer of this template and displays as hidden when viewed in smaller devices.</p>
+
+        <pre class="pre-wrapper">&lt;div class=&quot;az-footer&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;span&gt;&amp;copy; 2018 Azia Responsive Bootstrap 4 Dashboard Template&lt;/span&gt;
+  &lt;/div&gt;&lt;!-- container --&gt;
+&lt;/div&gt;&lt;!-- az-footer --&gt;</pre><br>
+
+        <table class="table table-code">
+          <thead>
+            <tr>
+              <th class="wd-30p">Class Reference</th>
+              <th class="wd-70p">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tx-red">.az-footer</span></td>
+              <td>The parent element wrapper class of footer</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr id="components">
+
+        <h2 class="section-subtitle">Elements</h2>
+        <p>The HTML Markup of alerts, buttons, etc. are explained in the bootstrap documentation or in thelive preview of this template. Feel free to use it in your page. Any components that are beyond of this template, may submit a request and suggestion to our email at <a href="mailto:support@bootstrapdash.com">support@bootstrapdash.com</a></p>
+
+
+        <hr id="knownissue">
+
+        <h1 class="section-title">Known Issue</h1>
+        <br>
+
+        <ul>
+          <li>
+            <p class="tx-medium tx-dark">Not displaying font icons in opening the html files directly in a browser.</p>
+            <p>A page loaded from a file:// URI, only files in (or below) the same directory of the filesystem are considered to be "same origin", and so putting the font in a different subtree (../font/) means it will be blocked by security policy restrictions. Most browser disables cross-domain fonts "by default. By fixing this, you need to put the file in a remote or local server. Anyway, that what where we're going.</p>
+          </li>
+        </ul>
+
+
+
+        <br>
+
+        <hr id="changelog">
+
+        <h1 class="section-title">Changelog</h1>
+
+        <h2>v1.0</h2>
+        <ul>
+          <li>Initial Release</li>
+        </ul>
+
+        <hr id="references">
+
+        <h1 class="section-title">References</h1>
+        <br>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="wd-30p">Plugins</th>
+              <th class="wd-70p">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bootstrap</td>
+              <td><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></td>
+            </tr>
+            <!--
+            <tr>
+              <td></td>
+              <td><a href=""></a></td>
+            </tr>
+            -->
+            <tr>
+              <td>Chart JS</td>
+              <td><a href="http://www.chartjs.org/">http://www.chartjs.org/</a></td>
+            </tr>
+            <tr>
+              <td>CryptoFont</td>
+              <td><a href="http://cryptofont.com">@AMPoellmann</a></td>
+            </tr>
+            <tr>
+              <td>DataTables</td>
+              <td><a href="https://datatables.net/">https://datatables.net/</a></td>
+            </tr>
+            <tr>
+              <td>Flag Icon CSS</td>
+              <td><a href="https://github.com/lipis/flag-icon-css">https://github.com/lipis/flag-icon-css</a></td>
+            </tr>
+            <tr>
+              <td>Flot</td>
+              <td><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></td>
+            </tr>
+            <tr>
+              <td>Flot CurvedLines</td>
+              <td><a href="http://curvedlines.michaelzinsmaier.de/">Michael Zinsmaier and nergal.dev</a></td>
+            </tr>
+            <tr>
+              <td>FontAwesome</td>
+              <td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+            </tr>
+            <tr>
+              <td>FullCalendar</td>
+              <td><a href="https://fullcalendar.io/">https://fullcalendar.io/</a></td>
+            </tr>
+            <tr>
+              <td>GMaps</td>
+              <td><a href="https://hpneo.github.io/gmaps/">https://hpneo.github.io/gmaps/</a></td>
+            </tr>
+            <tr>
+              <td>IonRangeSlider</td>
+              <td><a href="https://ionden.com">IonDen.com</a></td>
+            </tr>
+            <tr>
+              <td>Ionicons</td>
+              <td><a href="http://ionicons.com/">http://ionicons.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery</td>
+              <td><a href="https://jquery.com/">https://jquery.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Sparkline</td>
+              <td><a href="http://digitalbush.com/projects/masked-input-plugin/">http://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery Steps</td>
+              <td><a href="http://www.jquery-steps.com/">http://www.jquery-steps.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery UI</td>
+              <td><a href="https://jqueryui.com/">https://jqueryui.com/</a></td>
+            </tr>
+            <tr>
+              <td>jQuery MaskedInput</td>
+              <td><a href="https://digitalbush.com/projects/masked-input-plugin/">https://digitalbush.com/projects/masked-input-plugin/</a></td>
+            </tr>
+            <tr>
+              <td>jQVMap</td>
+              <td><a href="http://jqvmap.com">http://jqvmap.com</a></td>
+            </tr>
+            <tr>
+              <td>Leaflet</td>
+              <td><a href="http://leafletjs.com">http://leafletjs.com</a></td>
+            </tr>
+            <tr>
+              <td>LightSlider</td>
+              <td><a href="https://github.com/sachinchoolur/lightslider">https://github.com/sachinchoolur/lightslider</a></td>
+            </tr>
+            <tr>
+              <td>LineAwesome</td>
+              <td><a href="https://icons8.com/line-awesome">https://icons8.com/line-awesome</a></td>
+            </tr>
+            <tr>
+              <td>Moment JS</td>
+              <td><a href="https://momentjs.com/">https://momentjs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Morris JS</td>
+              <td><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></td>
+            </tr>
+            <tr>
+              <td>Parsley JS</td>
+              <td><a href="http://parsleyjs.org">http://parsleyjs.org</a></td>
+            </tr>
+            <tr>
+              <td>Peity</td>
+              <td><a href="http://benpickles.github.io/peity">http://benpickles.github.io/peity</a></td>
+            </tr>
+            <tr>
+              <td>Perfect Scrollbar</td>
+              <td><a href="http://utatti.github.io/perfect-scrollbar/">http://utatti.github.io/perfect-scrollbar/</a></td>
+            </tr>
+            <tr>
+              <td>Popper JS</td>
+              <td><a href="https://popper.js.org/">https://popper.js.org/</a></td>
+            </tr>
+            <tr>
+              <td>Quill</td>
+              <td><a href="https://quilljs.com/">https://quilljs.com/</a></td>
+            </tr>
+            <tr>
+              <td>Raphael</td>
+              <td><a href="http://dmitrybaranovskiy.github.io/raphael/">http://dmitrybaranovskiy.github.io/raphael/</a></td>
+            </tr>
+            <tr>
+              <td>Select2</td>
+              <td><a href="https://select2.org/">https://select2.org/</a></td>
+            </tr>
+            <tr>
+              <td>Spectrum</td>
+              <td><a href="https://bgrins.github.io/spectrum/">https://bgrins.github.io/spectrum/</a></td>
+            </tr>
+            <tr>
+              <td>Typicons</td>
+              <td><a href="https://www.s-ings.com/typicons/">https://www.s-ings.com/typicons/</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <br>
+
+        <hr id="support">
+
+        <h1 class="section-title">Customer Support</h1>
+
+        <p> You can request for support via email.</p>
+        <p>We will assist you any problem you encounter while buidling your dashboard via Azia template</p>
+        <p>Email: <a href="mailto:support@bootstrapdash.com">support@bootstrapdash.com</a> </p>
+        <p>We use request help form in comments and email to manage customer support. Soon, as we grow, we will invest and find the best customer support system we can use to serve you better. For the meantime, submit a help request to the link given for any issues and concerns that you have. Don't worry, we will respond to you as quickly as we can. Thank you.</p>
+
+        <br>
+        <hr>
+        <small>&copy; 2017. Azia Documentation v1.0. All Rights Reserved.</small>
+
+      </div><!-- main-panel -->
+    </div><!-- main-wrapper -->
+  </body>
+</htmL>
