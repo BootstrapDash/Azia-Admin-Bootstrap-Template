@@ -3,7 +3,7 @@ Azia Admin is a free responsive admin template built with Bootstrap 4. The templ
 
 Azia Admin is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems, project management systems, CMS or CRM.
 
-Although the template has a design like none other, it is easily customizable to suit your requirements. Star Admin comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
+Although the template has a design like none other, it is easily customizable to suit your requirements. Azia Admin comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
 
 <h1>Demo</h1>
 
@@ -18,12 +18,10 @@ Although the template has a design like none other, it is easily customizable to
 - jQuery
 - Gulp
 - Chart.js
-- Google Maps
-- Perfect Scrollbar
 
 <h1>Browser Support:</h1>
 
-StarAdmin is designed to work flawlessly with all the latest and modern web browsers.
+AziaAdmin is designed to work flawlessly with all the latest and modern web browsers.
 
 - Chrome (latest)
 - FireFox (latest)
@@ -34,9 +32,9 @@ StarAdmin is designed to work flawlessly with all the latest and modern web brow
 <h1>License Information:</h1>
 <hr>
 
-Star Admin is released under MIT license. Star Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
+Azia Admin is released under MIT license. Azia Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
 
-<h1>How to use Star Admin?</h1>
+<h1>How to use Azia Admin?</h1>
 <hr>
 
 0 - Install `node-gyp` package. If you dont know installation steps, please [click here](https://github.com/nodejs/node-gyp)
@@ -63,11 +61,11 @@ To contribute make sure you have a Node.js and npm installed. Now run the comman
 
 After Gulp has been installed, follow the steps below to contribute.
 <br>
-1 - Fork and clone the repo of Star Admin.
+1 - Fork and clone the repo of Azia Admin.
 <br>
 2 - Run the command npm install to install all the dependencies.
 <br>
-3 - Enter the command gulp serve. This will open Star Admin in your default browser.
+3 - Enter the command gulp serve. This will open Azia Admin in your default browser.
 <br>
 4 - Make you valuable contribution
 <br>
